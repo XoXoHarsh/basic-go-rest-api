@@ -9,7 +9,7 @@ import (
 )
 
 type HTTPServer struct {
-	Addr string
+	Addr string `yaml:"address" env:"ADDR" env-required:"true"`
 }
 
 // Capital letter is used to export the struct
